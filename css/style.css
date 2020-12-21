@@ -1,0 +1,172 @@
+html{width: 1920px; height: 1080px; overflow: hidden;}
+html, body{cursor: url(../img/cursor.png), auto;}
+body{width: 1920px; height: 1080px;}
+img{position: absolute; left: 0; top: 0;}
+p{font-family: 'Poppins', sans-serif; font-weight: 300; line-height: 1.3em;
+color: white; position: absolute;}
+
+/*snow*/
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+
+.hero {
+	// min-height: 10vh;
+	min-height: 50rem;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	opacity: 0;
+	
+	&__content {
+		position: relative;
+		align-self: center;
+		padding: 3rem 0;}}
+
+.snow {
+	position: absolute;
+	min-width: 100vw;
+	min-height: 100vh;
+	height: 60%;
+	width: 60%;
+	top: 0;
+	left: 0;}
+
+.snow .svg {
+	position: absolute;
+	width: 90%;
+	height: 90%;}
+
+#snow-top-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 10s infinite linear;}
+
+#snow-bottom-layer {
+	will-change: transform;
+	transform: translateY(-768px);
+	animation: fall 15s infinite linear;}
+
+@keyframes fall {
+	100% {transform: translateY(0);}}
+
+
+
+/*처음 고정 요소들*/
+.p1{font-size: 1.08em; top: 5.8%; left: 45.3%;}
+.p2{width: 12.5%; font-size: 1em; bottom: 5.5%; left: 3.6%;}
+
+.door{position: absolute; width: 28%; height: auto; top: 11%; left: 37.9%;}
+
+.background{background-color: #0f042b; width: 1920px; height: 1080px; z-index: -2; position: absolute;}
+
+.Over{position: absolute; top: 12.2%; left: 11%; z-index: -1;}
+.the{position: absolute; left: 23.8%; top: 44.5%; z-index: -1;}	
+.Door{position: absolute; bottom: 11.3%; right: 4.3%; z-index: -1;}
+
+.O{fill:#FBFFFE;}
+.v{fill:#FBFFFE;}
+.e1{fill:url(#SVGID_1_);}
+.r1{fill:url(#SVGID_2_);}
+
+.t{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+.h{fill:none;stroke:url(#SVGID_3_);stroke-width:3;stroke-miterlimit:10;}
+.e2{fill:none;stroke:url(#SVGID_4_);stroke-width:3;stroke-miterlimit:10;}
+
+.D{fill:url(#SVGID_5_);}
+.o1{fill:url(#SVGID_6_);}
+.o2{fill:#FBFFFE;}
+.r2{fill:#FBFFFE;}
+ 
+
+
+/*두번째 배경 요소들*/
+
+.back2{position: absolute; z-index: -3; left: -13%; top: -5%;}
+.background2{fill:url(#SVGID_7_);}
+
+
+/* girl*/
+.girl{position: absolute; opacity: 0; z-index: 3; right: 34%; bottom: 1.5%;}
+	
+.face{fill:#FFFCC5;}
+.leftop{fill:url(#SVGID_9_);
+	animation: rotate1-1 3s infinite;}
+
+.bottom{fill:url(#SVGID_10_);
+	animation: rotate1-1 3s infinite;}
+
+.hair{fill:url(#SVGID_12_);
+	animation: rotate1-2 3s infinite;}
+
+.chest{fill:url(#SVGID_11_);
+	animation: rotate1 3s infinite;}
+
+.neck{fill:#1D0634;
+	animation: rotate1 3s infinite;}
+
+.hand{fill:#FFFCC5;
+	animation: rotate1 3s infinite;}
+
+.arm{fill:url(#SVGID_13_);
+	animation: rotate1 3s infinite;}
+
+@keyframes rotate1{
+	0%{transform: rotate(-1deg);}
+	40%{transform: rotate(0deg;);}
+	70%{transform: rotateY(0deg);}
+	100%{transform: rotate(-1deg);}
+}
+
+@keyframes rotate1-1{
+	0%{transform: rotate(0.7deg);}
+	40%{transform: rotate(0deg;);}
+	70%{transform: rotateY(0deg);}
+	100%{transform: rotate(0.7deg);}
+}
+
+@keyframes rotate1-2{
+	0%{transform: rotate(-0.7deg);}
+	40%{transform: rotate(0deg;);}
+	70%{transform: rotateY(0deg);}
+	100%{transform: rotate(-0.7deg);}
+}
+
+
+/* flashlight*/
+.flashlight{position: absolute; opacity: 0; z-index: 3; top: 4%; left: 28%;
+	animation: rotate2 3s infinite;
+	animation-timing-function: ease-in-out;}
+
+@keyframes rotate2{
+	0%{transform: rotate(-2.3deg);}
+	40%{transform: rotate(0deg;);}
+	70%{transform: rotateY(0deg);}
+	100%{transform: rotate(-2.3deg);}
+}
+
+.handle{fill:url(#SVGID_7_);}
+.light{fill:url(#SVGID_8_);}
+
+
+/*twinkle light*/
+.box{position: absolute; opacity: 0; width: 100%; height: auto; bottom: 2%;}
+
+.twinkle{position: absolute; z-index: 3; left: 43%; bottom: 0%;
+	animation: twinkles 3s infinite;
+	animation-timing-function: ease-in;}
+
+@keyframes twinkles{
+	0%{opacity: 0%;}
+	30%{opacity: 100%}
+	70%{opacity: 100%;}
+	100%{opacity: 0%;}}
+
+.st0{opacity:0.9;}
+.st1{opacity:0.7;}
+.st2{fill:none;stroke:#FFFCC5;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+.st3{fill:#FFFCC5;}
+.st4{opacity:0.9;fill:#FFFCC5;}
+
+/* tree*/
+.tree{position: absolute; opacity: 0; width: 100%; top: 39.5%; z-index: -2;}
